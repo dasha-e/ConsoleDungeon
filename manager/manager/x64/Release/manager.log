@@ -1,0 +1,3 @@
+﻿  Source.cpp
+d:\спбпу\ооп\manager\manager\source.cpp(44): warning C4101: number: неиспользованная локальная переменная
+LINK : fatal error LNK1181: не удается открыть входной файл "sfml-graphics.lib"

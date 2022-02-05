@@ -1,0 +1,4 @@
+﻿  Dungeon.cpp
+d:\спбпу\ооп\dungeon\dungeon\dungeon.cpp(159): warning C4305: инициализация: усечение из "double" в "float"
+d:\спбпу\ооп\dungeon\dungeon\dungeon.cpp(168): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+  DUNGEON.vcxproj -> D:\СПБПУ\ООП\DUNGEON\Debug\DUNGEON.exe

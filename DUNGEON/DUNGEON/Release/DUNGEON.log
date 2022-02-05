@@ -1,0 +1,9 @@
+﻿  Dungeon.cpp
+d:\спбпу\ооп\dungeon\dungeon\dungeon.cpp(159): warning C4305: инициализация: усечение из "double" в "float"
+d:\спбпу\ооп\dungeon\dungeon\dungeon.cpp(168): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+  main.cpp
+d:\спбпу\ооп\dungeon\dungeon\main.cpp(7): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода
+  All 205 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  DUNGEON.vcxproj -> D:\СПБПУ\ООП\DUNGEON\Release\DUNGEON.exe

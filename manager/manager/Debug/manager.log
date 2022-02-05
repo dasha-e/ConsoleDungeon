@@ -1,0 +1,3 @@
+﻿  Source.cpp
+d:\спбпу\ооп\manager\manager\source.cpp(44): warning C4101: number: неиспользованная локальная переменная
+  manager.vcxproj -> D:\СПБПУ\ООП\manager\Debug\manager.exe
