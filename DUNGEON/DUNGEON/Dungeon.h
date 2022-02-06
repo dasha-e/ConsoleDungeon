@@ -13,26 +13,26 @@
 
 class Dungeon {
 private:
-	static int const nScreenWidth = 120;			// Ширина консольного окна (колонки)
-	static int const nScreenHeight = 40;			// Высота консольного окна (строки)
-	static int const nMapWidth = 16;				// Ширина поля
-	static int const nMapHeight = 16;			// Высота поля
+	static int const nScreenWidth = 120;	// columns
+	static int const nScreenHeight = 40;	// rows
+	static int const nMapWidth = 16; 	
+	static int const nMapHeight = 16;	
 
-	static float const fViewAngle;	// Угол обзора (поле видимости)
-	static float const fDepth;			// Максимальная дистанция обзора
-	static float const fSpeed;			// Скорость передвижения
+	static float const fViewAngle;	// viewing angle (visibility area)
+	static float const fDepth;	// maximum viewing distance
+	static float const fSpeed;	// walking speed
 
-	float fPlayerX;			// Координата игрока по оси X
-	float fPlayerY;			// Координата игрока по оси Y
-	float fPlayerA;			// Направление игрока
+	float fPlayerX;			// X coordinate of player
+	float fPlayerY;			// Y coordinate of player
+	float fPlayerA;			// players direction
 	
 	void SetDungeonColor(int number);
 
-	void Rotation(float fElapsedTime); //обработка поворота: A - вправо, D - влево
+	void Rotation(float fElapsedTime);
 
-	bool GetOutOfDungeon();//выход
+	bool GetOutOfDungeon();
 
-	void Movements(Map map, float fElapsedTime);//обработка движений и столкновений: W- вперед, S - назад. Если столкнулись с стеной - шаг назад.
+	void Movements(Map map, float fElapsedTime);
 
 	void DisplayMap(wchar_t *screen, Map map);
 
@@ -40,7 +40,7 @@ private:
 public:
 	Dungeon()
 	{
-		// Стартовое положение
+		// starting position
 		fPlayerX = 14.7f;
 		fPlayerY = 5.09f;
 		fPlayerA = 0.0f;
