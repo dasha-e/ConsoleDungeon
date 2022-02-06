@@ -16,12 +16,12 @@ void GoToXY(short x, short y)
 	SetConsoleCursorPosition(hStdOut, { x, y });
 }
 
-void ConsoleCursorVisible(bool show, short size) //сокрытие курсора
+void ConsoleCursorVisible(bool show, short size) // hiding the cursor
 {
 	CONSOLE_CURSOR_INFO structCursorInfo;
 	GetConsoleCursorInfo(hStdOut, &structCursorInfo);
-	structCursorInfo.bVisible = show; // изменяем видимость курсора
-	structCursorInfo.dwSize = size;   // изменяем размер курсора
+	structCursorInfo.bVisible = show;
+	structCursorInfo.dwSize = size; 
 	SetConsoleCursorInfo(hStdOut, &structCursorInfo);
 }
 
@@ -31,14 +31,14 @@ void PrintHere(int x, int y, std::string str)
 	std::cout << str;
 }
 
-void PrintActiveMenu(bool f, std::string str, int x, int y)
+void PrintActiveMenu(bool f, std::string str, int x, int y) // selecting an active line
 {
 	if (f) 	SetConsoleTextAttribute(hStdOut, FOREGROUND_RED);
 	else SetConsoleTextAttribute(hStdOut, FOREGROUND_BLUE);
 	PrintHere(X + x, Y + y, str);
 }
 
-short MainMenu()
+short MainMenu() // navigating the menu with the keys 'w' and 's'
 {
 	system("CLS");
 	SetConsoleTextAttribute(hStdOut, FOREGROUND_BLUE);
